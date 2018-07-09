@@ -46,6 +46,7 @@ fslroi data_2_ss data_2_ss_b0 32 1
 flirt -in data_2_ss_b0 -ref data_1_ss_b0 -omat data_b0_2_to_1.mat -out 
 
 data_2_ss_b0_aligned
+##################
 
 # Apply the transformation matrix to all volumes of scan 2
 flirt -in data_2_ss.nii.gz -ref data_1_ss.nii.gz -applyxfm -init 
